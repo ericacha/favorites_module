@@ -1,0 +1,42 @@
+<?php
+function favorites_menu() {
+    $items = array();
+    $items['movies'] = array(
+        'title' => 'Movies!',
+        'page callback' => 'movie_favorites',
+        'access callback' => TRUE,
+        'type' => MENU_NORMAL_ITEM,
+    );
+    $items['books'] = array(
+        'title' => 'Books!',
+        'page callback' => 'book_favorites',
+        'access callback' => TRUE,
+        'type' => MENU_NORMAL_ITEM,
+    );
+
+    $items['songs'] = array(
+        'title' => 'Songs!',
+        'page callback' => 'song_favorites',
+        'access callback' => TRUE,
+        'type' => MENU_NORMAL_ITEM,
+    );
+    return $items;
+}
+
+function movie_favorites() {
+    return '<p>Running Man</p>
+    <p>Harry Potter</p>
+    <p>Clown</p>';
+}
+
+function book_favorites() {
+    return '<p>"The King and I" by Anne Smith</p>
+    <p>"Lost Lake" by Snow Loyle</p>
+    <p>"Once Upon A Time" by Tracie Warner</p>';
+}
+
+function song_favorites() {
+    return '<p>"Because you love me" by Celine Dion</p>
+    <p>"Love Me Like You Do" by Ellie Golding</p>
+    <p>"All My Life" by KC JOJO</p>';
+}
