@@ -1,0 +1,3 @@
+[submodule "sites/all/modules/test_submodule"]
+	path = sites/all/modules/test_submodule
+	url = https://github.com/ericacha/test_submodule.git
