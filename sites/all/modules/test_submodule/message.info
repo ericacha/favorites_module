@@ -1,0 +1,5 @@
+name = message
+description = Display message.
+package = Erica and Abeer Comments
+core = 7.x
+files[] = message.module

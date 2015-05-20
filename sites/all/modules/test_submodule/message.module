@@ -1,0 +1,53 @@
+<?php
+function message_menu() {
+    $items = array();
+    $items['comments_insert'] = array(
+        'title' => 'New Comment',
+        'page callback' => 'new_comment',
+        'access callback' => TRUE,
+        'type' => MENU_CALLBACK,
+    );
+    $items['comments_edit'] = array(
+        'title' => 'Edited Comment',
+        'page callback' => 'edit_comment',
+        'access callback' => TRUE,
+        'type' => MENU_CALLBACK,
+    );
+    $items['comments_delete'] = array(
+        'title' => 'Deleted Comment',
+        'page callback' => 'delete_comment',
+        'access callback' => TRUE,
+        'type' => MENU_CALLBACK,
+    );
+
+    return $items;
+
+}
+
+function new_comment() {
+    drupal_set_message("Hi there!");
+    return '<p> Thank you for adding a new comment!</p>';
+
+
+    }
+
+function edit_comment() {
+    return '<p> Comment has been updated!</p>';
+    }
+
+function delete_comment() {
+    return '<p> You comment has been deleted!</p>';
+    }
+
+
+function message_comment_insert() {
+    $_GET['destination'] = 'comments_insert';
+    }
+
+function message_comment_update() {
+    $_GET['destination'] = 'comments_edit';
+    }
+
+function message_comment_delete() {
+    $_GET['destination'] = 'comments_delete';
+    }
