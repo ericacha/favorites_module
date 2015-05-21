@@ -1,3 +1,9 @@
 [submodule "sites/all/modules/ping_pong_module"]
 	path = sites/all/modules/ping_pong_module
 	url = https://github.com/chitraphp/ping_pong_module.git
+[submodule "sites/all/modules/sum_module"]
+	path = sites/all/modules/sum_module
+	url = https://github.com/chitraphp/sum_module.git
+[submodule "sites/all/modules/triangle_tracker_module"]
+	path = sites/all/modules/triangle_tracker_module
+	url = https://github.com/chitraphp/triangle_tracker_module.git
